@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>Snackbar</h1>
+    <p class="main-list"><a href="./index.html">Go Back</a></p>
+
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input class="number" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="fieldset">
+        <legend>State</legend>
+        <label>
+          <input
+            class="radio"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
